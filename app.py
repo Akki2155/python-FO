@@ -5,8 +5,10 @@ from processFile import process_data, process_holiday_calendra
 from time import sleep
 from FnoSpreadSheet import end_of_the_sheet
 from datetime import datetime
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 get_stocks = False
 thread = None
 
