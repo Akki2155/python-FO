@@ -2,3 +2,4 @@ Flask == 3.0.2
 Werkzeug == 3.0.1
 pandas == 2.2.2
 gspread == 6.1.0 
+oauth2client == 4.1.3
