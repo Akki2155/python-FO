@@ -61,6 +61,10 @@ def get_status():
     global get_stocks
     return jsonify({'status': get_stocks}), 200
 
+@app.route('/', methods=['GET'])
+def home():
+    return 'Hello, World!'
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=8080)
