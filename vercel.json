@@ -4,7 +4,7 @@
         {
             "src":"./index.py",
             "use":"@vercel/python",
-            "config":{ "python-version":"3.7" }
+            "config":{ "python-version":"3.10.12" }
         }
     ],
     "routes":[
@@ -12,10 +12,5 @@
             "src":"/(.*)",
             "dest":"/"
         }
-    ],
-    "functions": {
-        "api/**": {
-            "excludeFiles": "{.next,*.cache,node_modules,public,app}/**"
-        }
-    }
+    ]
 }
