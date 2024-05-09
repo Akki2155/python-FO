@@ -5,10 +5,10 @@ from processFile import process_data, process_holiday_calendra
 from time import sleep
 from FnoSpreadSheet import end_of_the_sheet
 from datetime import datetime
-from flask_cors import CORS
+from flask_cors import CORS,cross_origin
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "*"}}, allow_headers=["Content-Type"])
+CORS(app, resources={r"/*": {"origins": "*"}})
 app.config['TIMEOUT'] = 600
 get_stocks = False
 thread = None
@@ -41,6 +41,7 @@ def update_status():
     return jsonify({'status': 'Process is already running.'}), 200
 
 @app.route('/update_previous_sheet', methods=['POST'])
+@cross_origin()
 def update_previous_sheet():
     now = datetime.now()
     current_weekday = now.weekday()
@@ -67,9 +68,4 @@ def get_status():
 @app.route('/', methods=['GET'])
 def home():
     return 'Hello, World!'
-
-@app.after_request
-def after_request(response):
-    response.headers.add('Access-Control-Allow-Origin', '*')
-    return response
 
