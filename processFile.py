@@ -129,7 +129,7 @@
 #######################################################################################################################################################
 from FnoSpreadSheet import get_data_set, write_to_worksheet
 import pandas as pd
-from nselib import trading_holiday_calendar
+# from nselib import trading_holiday_calendar
 
 def process_data(r1s1_df):
     CMPdf=get_data_set()
@@ -154,9 +154,9 @@ def process_data(r1s1_df):
     write_to_worksheet(filtered_df, 'FilteredStocks')
 
 
-def process_holiday_calendra():
-    df=trading_holiday_calendar();
-    df['tradingDate'] = pd.to_datetime(df['tradingDate'], format='%d-%b-%Y')
-    return df['tradingDate'].dt.date.to_list()
+# def process_holiday_calendra():
+#     df=trading_holiday_calendar();
+#     df['tradingDate'] = pd.to_datetime(df['tradingDate'], format='%d-%b-%Y')
+#     return df['tradingDate'].dt.date.to_list()
     
     

@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from FnoSpreadSheet import get_r1_s1_values
 import threading
-from processFile import process_data, process_holiday_calendra
+from processFile import process_data
 from time import sleep
 from FnoSpreadSheet import end_of_the_sheet
 from datetime import datetime
@@ -47,10 +47,10 @@ def update_previous_sheet():
     current_weekday = now.weekday()
     current_time = now.time()
     print(current_time)
-    date=now.date
-    holiday_calendra=process_holiday_calendra()
+    # date=now.date
+    # holiday_calendra=process_holiday_calendra()
     if (
-        date not in holiday_calendra and current_weekday not in [5, 6] and
+        current_weekday not in [5, 6] and
         (current_time <= datetime.strptime('09:10', '%H:%M').time() or
         current_time >= datetime.strptime('16:00', '%H:%M').time())):
             
