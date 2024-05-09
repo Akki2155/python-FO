@@ -150,7 +150,8 @@ def process_data(r1s1_df):
     #     filtered_df = filtered_df.copy()  # Create a copy of the DataFrame slice
     #     filtered_df.loc[:, 'CMP'] = CMPdf['CMP'].values[:len(filtered_df)]
     #     filtered_df.loc[:, 'CHANGE'] = CMPdf['CHANGE'].values[:len(filtered_df)]
-    filtered_df.loc[filtered_df.index, 'CMP'] = CMPdf.loc[filtered_df.index, 'CMP']
+    if not filtered_df.empty:
+        filtered_df.loc[filtered_df.index, 'CMP'] = CMPdf.loc[filtered_df.index, 'CMP']
     write_to_worksheet(filtered_df, 'FilteredStocks')
 
 
