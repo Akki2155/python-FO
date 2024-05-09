@@ -8,7 +8,7 @@ from datetime import datetime
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app, resources={r"/*": {"origins": "*"}}, allow_headers=["Content-Type"])
 app.config['TIMEOUT'] = 600
 get_stocks = False
 thread = None
