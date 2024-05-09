@@ -4,8 +4,9 @@ import threading
 from processFile import process_data
 from time import sleep
 from FnoSpreadSheet import end_of_the_sheet
-from datetime import datetime
+from datetime import datetime, time
 from flask_cors import CORS,cross_origin
+import pytz
 
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
@@ -43,17 +44,16 @@ def update_status():
 @app.route('/update_previous_sheet', methods=['POST'])
 @cross_origin()
 def update_previous_sheet():
-    now = datetime.now()
+    ist_timezone = pytz.timezone('Asia/Kolkata')
+    now = datetime.now(ist_timezone)
     current_weekday = now.weekday()
     current_time = now.time()
-    print(current_time)
-    # date=now.date
+    start_time = time(9, 10)
+    end_time = time(16, 0)
+    print(current_time, current_time<=start_time, current_time>=end_time)
     # holiday_calendra=process_holiday_calendra()
-    if (
-        current_weekday not in [5, 6] and
-        (current_time <= datetime.strptime('09:10', '%H:%M').time() or
-        current_time >= datetime.strptime('16:00', '%H:%M').time())):
-            
+    if (current_weekday not in [5, 6] and (current_time<=start_time or current_time>=end_time)):
+              
             end_of_the_sheet()
             return jsonify({'status': 'Sheet Updated Successfully'}), 200
     else:
