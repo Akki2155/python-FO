@@ -9,6 +9,7 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
+app.config['TIMEOUT'] = 600
 get_stocks = False
 thread = None
 
