@@ -2,6 +2,8 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import pandas as pd
 from PivotPointStandards import calculate_fibonacci_pivot_points
+from datetime import datetime
+import pytz
 
 scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
 
@@ -46,13 +48,43 @@ def write_to_worksheet(dataframe, worksheet_name):
         worksheet = spreadsheet.add_worksheet(title=worksheet_name, rows=1, cols=1)
 
     if dataframe.empty:
-      print("DataFrame is empty. Clearing worksheet:", worksheet_name)
-      worksheet.clear()
-      return
-    worksheet.clear() 
+        print("DataFrame is empty. Clearing worksheet:", worksheet_name)
+    
+        historyLog = spreadsheet.get_worksheet(4)
+    
+        current_time = datetime.now().astimezone(pytz.timezone('Asia/Kolkata')).strftime('%Y-%m-%d %H:%M:%S %Z')
+        
+        dataframe['SYMBOL'] = ['No Data'] 
+        dataframe['EXCHANGE'] = 'No Data'
+        dataframe['PRICE OPEN'] = 'No Data'
+        dataframe['HIGH'] = 'No Data'
+        dataframe['LOW'] = 'No Data'
+        dataframe['CLOSE'] = 'No Data'
+        dataframe['Fibonacci_S1'] = 'No Data'  
+        dataframe['Fibonacci_R1'] = 'No Data'    
+        dataframe['TIMESTAMP'] = current_time
+        
+        historyValues = [dataframe.columns.tolist()] + dataframe.values.tolist()
+        
+        spreadsheet.values_append("'" + historyLog.title + "'!A1", 
+                                params={'valueInputOption': 'RAW'}, 
+                                body={'values': historyValues})
+        
+        worksheet.clear()
+        return
+    
+    worksheet.clear()
+
+    dataframe['TIMESTAMP'] = datetime.now().astimezone(pytz.timezone('Asia/Kolkata')).strftime('%Y-%m-%d %H:%M:%S %Z')
     values = [dataframe.columns.tolist()] + dataframe.values.tolist()
+
+    historyLog=spreadsheet.get_worksheet(4) 
+    historyValues = [dataframe.columns.tolist()] + dataframe.values.tolist()
+
     print(dataframe)
+
     spreadsheet.values_update("'" + worksheet.title + "'!A1", params={'valueInputOption': 'RAW'}, body={'values': values})
+    spreadsheet.values_append("'" + historyLog.title + "'!A1", params={'valueInputOption': 'RAW'}, body={'values': historyValues})
 
 
 def end_of_the_sheet():

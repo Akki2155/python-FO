@@ -17,7 +17,7 @@ def start_process():
     r1s1_df=get_r1_s1_values()
     while get_stocks:
         process_data(r1s1_df)
-        sleep(60)
+        sleep(30)
 
 @app.route('/update_status', methods=['POST'])
 def update_status():
