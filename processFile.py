@@ -141,7 +141,7 @@ def process_data(r1s1_df):
     CMPdf.reset_index(drop=True, inplace=True)
     r1s1_df.reset_index(drop=True, inplace=True)
 
-    filtered_df = r1s1_df[(CMPdf['CMP'] > r1s1_df['Fibonacci_R1']) | (CMPdf['CMP'] < r1s1_df['Fibonacci_S1'])]
+    filtered_df = r1s1_df[((CMPdf['CMP'] > r1s1_df['Fibonacci_R1']) & (CMPdf['CHANGE'] > 1.5)) | ((CMPdf['CMP'] < r1s1_df['Fibonacci_S1']) & (CMPdf['CHANGE'] < -1.5))]
     if not filtered_df.empty:
         # Add a new column "TradeType" with default value "Hold"
         

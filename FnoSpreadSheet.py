@@ -49,12 +49,10 @@ def write_to_worksheet(dataframe, worksheet_name):
 
     if dataframe.empty:
         print("DataFrame is empty. Clearing worksheet:", worksheet_name)
-    
         historyLog = spreadsheet.get_worksheet(4)
-    
         current_time = datetime.now().astimezone(pytz.timezone('Asia/Kolkata')).strftime('%Y-%m-%d %H:%M:%S %Z')
-        
-        dataframe['SYMBOL'] = ['No Data'] 
+
+        dataframe['SYMBOL'] = 'No Data' 
         dataframe['EXCHANGE'] = 'No Data'
         dataframe['PRICE OPEN'] = 'No Data'
         dataframe['HIGH'] = 'No Data'
@@ -75,17 +73,78 @@ def write_to_worksheet(dataframe, worksheet_name):
     
     worksheet.clear()
 
-    print("Writing to worksheet:", dataframe)
-    dataframe['TIMESTAMP'] = datetime.now().astimezone(pytz.timezone('Asia/Kolkata')).strftime('%Y-%m-%d %H:%M:%S %Z')
+    print("Writing to worksheet:", worksheet_name)
+    current_time = datetime.now().astimezone(pytz.timezone('Asia/Kolkata')).strftime('%Y-%m-%d %H:%M:%S %Z')
+    dataframe['TIMESTAMP'] = current_time
     values = [dataframe.columns.tolist()] + dataframe.values.tolist()
 
-    historyLog=spreadsheet.get_worksheet(4) 
-    historyValues = [dataframe.columns.tolist()] + dataframe.values.tolist()
+    historyLog = spreadsheet.get_worksheet(4) 
 
-    # print(dataframe)
+    # Define the background colors for Buy and Sell entries
+    buy_color = {'red': 0, 'green': 1, 'blue': 0, 'alpha': 0}
+    sell_color = {'red': 1, 'green': 0, 'blue': 0, 'alpha': 0}
 
+    # Get the range of the TradeType column
+    trade_type_range = f'B2:B{len(dataframe) + 1}'  # Assuming TradeType column starts from B2
+    
+    # Prepare the request to add conditional formatting for Buy and Sell entries
+    requests = []
+    requests.append({
+        'addConditionalFormatRule': {
+            'rule': {
+                'ranges': [{
+                    'sheetId': worksheet.id,
+                    'startRowIndex': 1,
+                    'endRowIndex': len(dataframe) + 1,
+                    'startColumnIndex': dataframe.columns.get_loc('TradeType'),
+                    'endColumnIndex': dataframe.columns.get_loc('TradeType') + 1,
+                }],
+                'booleanRule': {
+                    'condition': {
+                        'type': 'TEXT_CONTAINS',
+                        'values': [{'userEnteredValue': 'Buy'}],
+                    },
+                    'format': {
+                        'backgroundColor': buy_color,
+                    },
+                },
+            },
+            'index': 0,
+        }
+    })
+    requests.append({
+        'addConditionalFormatRule': {
+            'rule': {
+                'ranges': [{
+                    'sheetId': worksheet.id,
+                    'startRowIndex': 1,
+                    'endRowIndex': len(dataframe) + 1,
+                    'startColumnIndex': dataframe.columns.get_loc('TradeType'),
+                    'endColumnIndex': dataframe.columns.get_loc('TradeType') + 1,
+                }],
+                'booleanRule': {
+                    'condition': {
+                        'type': 'TEXT_CONTAINS',
+                        'values': [{'userEnteredValue': 'Sell'}],
+                    },
+                    'format': {
+                        'backgroundColor': sell_color,
+                    },
+                },
+            },
+            'index': 1,
+        }
+    })
+
+    # Execute the requests
+    batch_update_body = {'requests': requests}
+    spreadsheet.batch_update(batch_update_body)
+
+    # Update data
     spreadsheet.values_update("'" + worksheet.title + "'!A1", params={'valueInputOption': 'RAW'}, body={'values': values})
-    spreadsheet.values_append("'" + historyLog.title + "'!A1", params={'valueInputOption': 'RAW'}, body={'values': historyValues})
+
+    # Append data to history log
+    spreadsheet.values_append("'" + historyLog.title + "'!A1", params={'valueInputOption': 'RAW'}, body={'values': values})
 
 
 def end_of_the_sheet():
