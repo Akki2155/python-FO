@@ -78,6 +78,12 @@ def get_status():
     global get_stocks
     return jsonify({'status': get_stocks}), 200
 
+@app.route('/clear_history_log', methods=['POST'])
+def clear_history_log():
+    message=clear_history_log()
+    # message = "History log cleared successfully."
+    return jsonify({'status': message}), 200
+
 @app.route('/', methods=['GET'])
 def home():
     return 'Hello, World!'

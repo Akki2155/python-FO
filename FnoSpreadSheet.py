@@ -171,3 +171,8 @@ def get_r1_s1_values():
     R1S1SHEETVALUES = R1S1SHEET.get_all_values()
     R1S1SHEETVALUESdf = pd.DataFrame(R1S1SHEETVALUES[1:], columns=R1S1SHEETVALUES[0])
     return R1S1SHEETVALUESdf    
+
+def clear_history_log():
+    historyLog = spreadsheet.get_worksheet(4)
+    historyLog.clear()
+    print("History log cleared.")
