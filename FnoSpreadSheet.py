@@ -75,13 +75,14 @@ def write_to_worksheet(dataframe, worksheet_name):
     
     worksheet.clear()
 
+    print("Writing to worksheet:", dataframe)
     dataframe['TIMESTAMP'] = datetime.now().astimezone(pytz.timezone('Asia/Kolkata')).strftime('%Y-%m-%d %H:%M:%S %Z')
     values = [dataframe.columns.tolist()] + dataframe.values.tolist()
 
     historyLog=spreadsheet.get_worksheet(4) 
     historyValues = [dataframe.columns.tolist()] + dataframe.values.tolist()
 
-    print(dataframe)
+    # print(dataframe)
 
     spreadsheet.values_update("'" + worksheet.title + "'!A1", params={'valueInputOption': 'RAW'}, body={'values': values})
     spreadsheet.values_append("'" + historyLog.title + "'!A1", params={'valueInputOption': 'RAW'}, body={'values': historyValues})

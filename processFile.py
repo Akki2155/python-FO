@@ -132,26 +132,28 @@ import pandas as pd
 # from nselib import trading_holiday_calendar
 
 def process_data(r1s1_df):
-    CMPdf=get_data_set()
-    CMPdf['CMP']=pd.to_numeric(CMPdf['CMP'])
+    CMPdf = get_data_set()
+    CMPdf['CMP'] = pd.to_numeric(CMPdf['CMP'])
     CMPdf['CHANGE'] = pd.to_numeric(CMPdf['CHANGE'])
     r1s1_df['Fibonacci_S1'] = pd.to_numeric(r1s1_df['Fibonacci_S1'])
     r1s1_df['Fibonacci_R1'] = pd.to_numeric(r1s1_df['Fibonacci_R1'])
-    # PREVLOWHIGHCLOSEdf['CLOSE'] = pd.to_numeric(PREVLOWHIGHCLOSEdf['CLOSE'])
-
-    # PREVLOWHIGHCLOSEdf['s1'],PREVLOWHIGHCLOSEdf['r1'] =(calculate_fibonacci_pivot_points(PREVLOWHIGHCLOSEdf['HIGH'], PREVLOWHIGHCLOSEdf['LOW'], PREVLOWHIGHCLOSEdf['CLOSE']))
-
 
     CMPdf.reset_index(drop=True, inplace=True)
     r1s1_df.reset_index(drop=True, inplace=True)
 
-    filtered_df = r1s1_df[(CMPdf['CMP'] > r1s1_df['Fibonacci_R1']) & (CMPdf['CHANGE'] >= 1.5) & (CMPdf['CHANGE'] <= 2.5) ]
-    # if not filtered_df.empty:
-    #     filtered_df = filtered_df.copy()  # Create a copy of the DataFrame slice
-    #     filtered_df.loc[:, 'CMP'] = CMPdf['CMP'].values[:len(filtered_df)]
-    #     filtered_df.loc[:, 'CHANGE'] = CMPdf['CHANGE'].values[:len(filtered_df)]
+    filtered_df = r1s1_df[(CMPdf['CMP'] > r1s1_df['Fibonacci_R1']) | (CMPdf['CMP'] < r1s1_df['Fibonacci_S1'])]
     if not filtered_df.empty:
+        # Add a new column "TradeType" with default value "Hold"
+        
+        # Update 'CMP' and 'CHANGE' columns
         filtered_df.loc[filtered_df.index, 'CMP'] = CMPdf.loc[filtered_df.index, 'CMP']
+        filtered_df.loc[filtered_df.index, 'CHANGE'] = CMPdf.loc[filtered_df.index, 'CHANGE']
+
+        filtered_df['TradeType'] = 'Hold'
+
+        # Conditionally assign values based on criteria
+        filtered_df.loc[CMPdf['CMP'] > r1s1_df['Fibonacci_R1'], 'TradeType'] = 'Buy'
+        filtered_df.loc[CMPdf['CMP'] < r1s1_df['Fibonacci_S1'], 'TradeType'] = 'Sell'
     write_to_worksheet(filtered_df, 'FilteredStocks')
 
 
