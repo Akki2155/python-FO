@@ -49,24 +49,24 @@ def write_to_worksheet(dataframe, worksheet_name):
 
     if dataframe.empty:
         print("DataFrame is empty. Clearing worksheet:", worksheet_name)
-        historyLog = spreadsheet.get_worksheet(4)
-        current_time = datetime.now().astimezone(pytz.timezone('Asia/Kolkata')).strftime('%Y-%m-%d %H:%M:%S %Z')
+        # historyLog = spreadsheet.get_worksheet(4)
+        # current_time = datetime.now().astimezone(pytz.timezone('Asia/Kolkata')).strftime('%Y-%m-%d %H:%M:%S %Z')
 
-        dataframe['SYMBOL'] = 'No Data' 
-        dataframe['EXCHANGE'] = 'No Data'
-        dataframe['PRICE OPEN'] = 'No Data'
-        dataframe['HIGH'] = 'No Data'
-        dataframe['LOW'] = 'No Data'
-        dataframe['CLOSE'] = 'No Data'
-        dataframe['Fibonacci_S1'] = 'No Data'  
-        dataframe['Fibonacci_R1'] = 'No Data'    
-        dataframe['TIMESTAMP'] = current_time
+        # dataframe['SYMBOL'] = 'No Data' 
+        # dataframe['EXCHANGE'] = 'No Data'
+        # dataframe['PRICE OPEN'] = 'No Data'
+        # dataframe['HIGH'] = 'No Data'
+        # dataframe['LOW'] = 'No Data'
+        # dataframe['CLOSE'] = 'No Data'
+        # dataframe['Fibonacci_S1'] = 'No Data'  
+        # dataframe['Fibonacci_R1'] = 'No Data'    
+        # dataframe['TIMESTAMP'] = current_time
         
-        historyValues = [dataframe.columns.tolist()] + dataframe.values.tolist()
+        # historyValues = [dataframe.columns.tolist()] + dataframe.values.tolist()
         
-        spreadsheet.values_append("'" + historyLog.title + "'!A1", 
-                                params={'valueInputOption': 'RAW'}, 
-                                body={'values': historyValues})
+        # spreadsheet.values_append("'" + historyLog.title + "'!A1", 
+        #                         params={'valueInputOption': 'RAW'}, 
+        #                         body={'values': historyValues})
         
         worksheet.clear()
         return
@@ -78,7 +78,7 @@ def write_to_worksheet(dataframe, worksheet_name):
     dataframe['TIMESTAMP'] = current_time
     values = [dataframe.columns.tolist()] + dataframe.values.tolist()
 
-    historyLog = spreadsheet.get_worksheet(4) 
+    # historyLog = spreadsheet.get_worksheet(4) 
 
     # Define the background colors for Buy and Sell entries
     buy_color = {'red': 0, 'green': 1, 'blue': 0, 'alpha': 0}
@@ -143,14 +143,16 @@ def write_to_worksheet(dataframe, worksheet_name):
     # Update data
     spreadsheet.values_update("'" + worksheet.title + "'!A1", params={'valueInputOption': 'RAW'}, body={'values': values})
 
-    # Append data to history log
-    spreadsheet.values_append("'" + historyLog.title + "'!A1", params={'valueInputOption': 'RAW'}, body={'values': values})
+    # # Append data to history log
+    # spreadsheet.values_append("'" + historyLog.title + "'!A1", params={'valueInputOption': 'RAW'}, body={'values': values})
 
 
 def end_of_the_sheet():
     endOfDaySheet = spreadsheet.get_worksheet(1)
     endOfDayData = endOfDaySheet.get_all_values()
     endOfDayData_df = pd.DataFrame(endOfDayData[1:], columns=endOfDayData[0])
+
+    current_time = datetime.now().astimezone(pytz.timezone('Asia/Kolkata')).strftime('%Y-%m-%d %H:%M:%S %Z')
 
     endOfDayData_df['HIGH'] = pd.to_numeric(endOfDayData_df['HIGH'], errors='coerce')
     endOfDayData_df['LOW'] = pd.to_numeric(endOfDayData_df['LOW'], errors='coerce')
@@ -159,7 +161,7 @@ def end_of_the_sheet():
     endOfDayData_df.dropna(subset=['HIGH', 'LOW', 'CLOSE'], inplace=True)
 
     endOfDayData_df.loc[:, 'Fibonacci_S1'], endOfDayData_df.loc[:, 'Fibonacci_R1']=calculate_fibonacci_pivot_points(endOfDayData_df['HIGH'], endOfDayData_df['LOW'], endOfDayData_df['CLOSE'])
-
+    endOfDayData_df.loc[:,'TIMESTAMP'] = current_time
     values = [endOfDayData_df.columns.tolist()] + endOfDayData_df.values.tolist()
 
     R1S1SHEET=spreadsheet.get_worksheet(3)

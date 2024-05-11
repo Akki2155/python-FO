@@ -63,7 +63,8 @@ def update_previous_sheet():
     start_time = time(9, 10)
     end_time = time(16, 0)
     logger.info(f"Current time: {current_time}, Weekday: {current_weekday}")
-    if (current_weekday not in [5, 6] and (current_time <= start_time or current_time >= end_time)):
+    print(f"Current time: {current_time}, Weekday: {current_weekday}", "start_time: ", start_time, "end_time: ", end_time, current_weekday not in [5, 6])
+    if (current_weekday in [5, 6] or (current_time <= start_time or current_time >= end_time)):
         try:
             end_of_the_sheet()
             return jsonify({'status': 'Sheet Updated Successfully'}), 200
@@ -78,11 +79,11 @@ def get_status():
     global get_stocks
     return jsonify({'status': get_stocks}), 200
 
-@app.route('/clear_history_log', methods=['POST'])
-def clear_history_log():
-    message=clear_history_log()
-    # message = "History log cleared successfully."
-    return jsonify({'status': message}), 200
+# @app.route('/clear_history_log', methods=['POST'])
+# def clear_history_log():
+#     message=clear_history_log()
+#     # message = "History log cleared successfully."
+#     return jsonify({'status': message}), 200
 
 @app.route('/', methods=['GET'])
 def home():
