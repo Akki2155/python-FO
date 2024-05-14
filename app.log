@@ -11,3 +11,365 @@
 2024-05-11 13:02:08,644 - INFO - Current time: 13:02:08.643986, Weekday: 5
 2024-05-11 13:02:39,417 - INFO - Current time: 13:02:39.417293, Weekday: 5
 2024-05-11 13:03:14,055 - INFO - Current time: 13:03:14.055050, Weekday: 5
+2024-05-14 21:40:25,105 - INFO - Process started.
+2024-05-14 21:40:27,021 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:28,038 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:29,092 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:30,195 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:31,214 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:32,108 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:33,011 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:33,978 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:35,158 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:36,121 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:37,065 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:37,969 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:38,879 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:39,869 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:40,892 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:41,881 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:42,839 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:43,719 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:44,681 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:45,706 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:46,731 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:47,755 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:48,739 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:49,696 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:50,618 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:51,642 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:52,570 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:53,512 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:54,512 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:55,637 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:56,552 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:58,099 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:40:58,503 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:40:58,803 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:40:59,118 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:40:59,423 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:40:59,732 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:00,046 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:00,356 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:00,682 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:01,023 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:01,329 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:01,677 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:02,001 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:02,313 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:02,621 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:02,933 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:03,239 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:03,551 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:03,929 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:04,240 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:04,564 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:04,955 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:05,262 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:05,585 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:05,977 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:06,296 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:06,596 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:06,913 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:07,219 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:07,536 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:07,923 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:08,234 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:08,560 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:08,861 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:09,178 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:09,490 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:09,870 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:10,182 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:10,491 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:10,983 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:11,292 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:11,611 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:12,020 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:12,430 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:12,754 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:13,059 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:13,367 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:13,761 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:14,129 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:14,479 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:14,794 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:15,107 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:15,502 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:15,911 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:16,220 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:16,525 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:16,850 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:17,166 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:17,549 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:17,865 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:18,178 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:18,523 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:18,832 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:19,147 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:19,495 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:19,807 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:20,212 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:20,520 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:20,840 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:21,147 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:21,545 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:21,954 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:22,978 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:41:23,903 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:41:24,925 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:41:25,950 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:41:26,973 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:41:27,999 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:41:29,033 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:41:30,253 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:41:31,194 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:41:32,113 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:41:33,136 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:41:34,111 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:41:35,062 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:41:35,973 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:41:36,978 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:41:38,031 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:41:47,260 - INFO - Process started.
+2024-05-14 21:41:49,290 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:41:50,259 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:41:51,281 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:41:52,265 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:41:53,192 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:41:54,165 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:41:55,275 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:41:56,263 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:41:57,493 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:41:58,519 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:41:59,567 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:00,770 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:01,779 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:02,084 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:02,402 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:02,721 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:03,116 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:03,428 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:03,732 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:04,023 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:04,345 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:04,660 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:05,066 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:05,377 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:05,698 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:06,090 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:06,395 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:06,719 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:07,045 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:07,417 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:07,722 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:08,014 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:08,323 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:08,636 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:08,960 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:09,369 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:09,776 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:10,080 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:10,386 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:10,710 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:11,109 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:11,418 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:11,722 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:12,016 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:12,337 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:12,746 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:13,073 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:13,379 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:13,699 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:13,998 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:14,389 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:14,794 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:15,126 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:15,510 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:15,818 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:16,126 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:16,447 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:16,842 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:17,253 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:17,561 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:17,882 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:18,277 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:18,582 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:18,987 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:19,311 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:19,620 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:19,922 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:20,218 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:20,529 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:20,847 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:21,171 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:21,557 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:22,495 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:23,432 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:24,497 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:25,521 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:26,420 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:27,437 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:28,521 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:29,488 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:30,437 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:31,591 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:32,516 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:33,539 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:34,515 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:35,526 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:36,513 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:37,389 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:38,456 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:39,477 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:40,501 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:41,482 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:42,354 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:43,368 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:44,393 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:45,436 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:46,442 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:47,365 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:48,299 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:49,237 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:50,310 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:51,260 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:42:52,275 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:53,131 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:53,957 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:54,281 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:54,586 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:54,905 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:55,211 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:55,525 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:55,860 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:56,270 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:56,577 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:56,885 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:57,195 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:57,508 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:57,830 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:42:58,143 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:43:31,890 - INFO - Process started.
+2024-05-14 21:43:33,859 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:43:34,879 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:43:35,812 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:43:36,905 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:43:37,848 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:43:38,795 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:43:39,795 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:44:16,386 - INFO - Process started.
+2024-05-14 21:44:18,831 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:44:20,040 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:44:20,911 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:44:21,927 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:44:22,862 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:44:23,826 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:44:24,793 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:44:57,270 - INFO - Process started.
+2024-05-14 21:44:58,988 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:44:59,876 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:45:00,903 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:45:01,924 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:45:02,847 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:45:03,767 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:45:04,628 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:45:05,508 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:45:06,632 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:45:07,548 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:45:08,477 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:45:09,367 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:45:10,235 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:45:11,140 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:45:12,015 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:45:12,984 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:45:12,985 - INFO - Process stopped.
+2024-05-14 21:47:13,510 - INFO - Process started.
+2024-05-14 21:47:15,462 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:47:16,347 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:47:17,307 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:47:18,184 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:47:19,121 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:47:19,990 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:47:20,889 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:47:21,831 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:47:22,834 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:47:23,709 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:47:24,631 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:47:25,598 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:47:25,598 - INFO - Process stopped.
+2024-05-14 21:49:56,340 - INFO - Process started.
+2024-05-14 21:49:59,050 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:50:00,106 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:50:01,029 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:50:02,052 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:50:03,077 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:50:04,105 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:50:05,121 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:50:06,145 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:50:07,067 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:50:08,089 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:50:09,087 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:50:10,075 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:50:11,000 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:50:11,930 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:50:12,807 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:50:13,823 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:50:14,849 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:50:14,850 - INFO - Process stopped.
+2024-05-14 21:52:15,126 - INFO - Process started.
+2024-05-14 21:52:17,191 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:52:18,315 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:52:19,378 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:52:20,545 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:52:21,573 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:52:22,652 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:52:23,642 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:52:24,625 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:52:25,942 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:52:27,202 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:52:28,391 - ERROR - Error in processing data: Cannot perform 'rand_' with a dtyped [float64] array and scalar of type [bool]
+2024-05-14 21:52:28,391 - INFO - Process stopped.
+2024-05-14 21:53:44,456 - INFO - Process started.
+2024-05-14 21:54:51,667 - INFO - Process stopped.
+2024-05-14 21:55:02,192 - INFO - Process started.
+2024-05-14 21:55:05,110 - ERROR - Error in processing data: 'TradeType'
+2024-05-14 21:55:06,937 - ERROR - Error in processing data: 'TradeType'
+2024-05-14 21:55:09,033 - ERROR - Error in processing data: 'TradeType'
+2024-05-14 21:55:10,899 - ERROR - Error in processing data: 'TradeType'
+2024-05-14 21:55:12,861 - ERROR - Error in processing data: 'TradeType'
+2024-05-14 21:55:15,005 - ERROR - Error in processing data: 'TradeType'
+2024-05-14 21:55:16,786 - ERROR - Error in processing data: 'TradeType'
+2024-05-14 21:55:18,687 - ERROR - Error in processing data: 'TradeType'
+2024-05-14 21:55:20,474 - ERROR - Error in processing data: 'TradeType'
+2024-05-14 21:55:22,351 - ERROR - Error in processing data: 'TradeType'
+2024-05-14 21:55:24,441 - ERROR - Error in processing data: 'TradeType'
+2024-05-14 21:55:27,022 - ERROR - Error in processing data: 'TradeType'
+2024-05-14 21:55:28,792 - ERROR - Error in processing data: 'TradeType'
+2024-05-14 21:55:30,739 - ERROR - Error in processing data: 'TradeType'
+2024-05-14 21:55:32,577 - ERROR - Error in processing data: 'TradeType'
+2024-05-14 21:55:34,404 - ERROR - Error in processing data: 'TradeType'
+2024-05-14 21:55:36,239 - ERROR - Error in processing data: 'TradeType'
+2024-05-14 21:55:38,165 - ERROR - Error in processing data: 'TradeType'
+2024-05-14 21:55:39,960 - ERROR - Error in processing data: 'TradeType'
+2024-05-14 21:55:41,847 - ERROR - Error in processing data: 'TradeType'
+2024-05-14 21:55:43,036 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:55:43,346 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:55:43,659 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:55:43,965 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:55:44,279 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:55:44,630 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:55:44,937 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:55:45,349 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:55:45,757 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:55:46,070 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:55:46,387 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:55:46,691 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:55:47,514 - ERROR - Error in processing data: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:44425109419'.
+2024-05-14 21:55:49,326 - ERROR - Error in processing data: 'TradeType'
+2024-05-14 21:55:51,305 - ERROR - Error in processing data: 'TradeType'
+2024-05-14 21:55:53,111 - ERROR - Error in processing data: 'TradeType'
+2024-05-14 21:55:53,112 - INFO - Process stopped.
+2024-05-14 21:56:16,727 - INFO - Process started.
+2024-05-14 21:59:40,551 - INFO - Process started.
+2024-05-14 22:00:50,219 - INFO - Process stopped.

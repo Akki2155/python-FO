@@ -23,13 +23,14 @@ logger.addHandler(file_handler)
 
 def start_process():
     global get_stocks
-    r1s1_df = get_r1_s1_values()
+    r1s1_df = get_r1_s1_values('R1S1SHEET')
     while get_stocks:
-        try:
+        # try:
+            print("Processing data loop...", r1s1_df)
             process_data(r1s1_df)
             sleep(30)
-        except Exception as e:
-            logger.error(f"Error in processing data: {e}")
+        # except Exception as e:
+        #     logger.error(f"Error in processing data: {e}")
 
 @app.route('/update_status', methods=['POST'])
 def update_status():

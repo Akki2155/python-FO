@@ -141,20 +141,29 @@ def process_data(r1s1_df):
     CMPdf.reset_index(drop=True, inplace=True)
     r1s1_df.reset_index(drop=True, inplace=True)
 
-    filtered_df = r1s1_df[((CMPdf['CMP'] > r1s1_df['Fibonacci_R1']) & (CMPdf['CHANGE'] > 1.5)) | ((CMPdf['CMP'] < r1s1_df['Fibonacci_S1']) & (CMPdf['CHANGE'] < -1.5))]
-    if not filtered_df.empty:
-        # Add a new column "TradeType" with default value "Hold"
-        
-        # Update 'CMP' and 'CHANGE' columns
-        filtered_df.loc[filtered_df.index, 'CMP'] = CMPdf.loc[filtered_df.index, 'CMP']
-        filtered_df.loc[filtered_df.index, 'CHANGE'] = CMPdf.loc[filtered_df.index, 'CHANGE']
+    buy_df = r1s1_df[(CMPdf['CMP'] > r1s1_df['Fibonacci_R1']) & ((CMPdf['CHANGE'] >= 1.5) & (CMPdf['CHANGE'] <= 3))]
+    sell_df = r1s1_df[(CMPdf['CMP'] < r1s1_df['Fibonacci_S1']) & ((CMPdf['CHANGE'] >= -3) & (CMPdf['CHANGE'] <= -1.5))]
+    if not buy_df.empty:
 
-        filtered_df['TradeType'] = 'Hold'
+        buy_df.loc[buy_df.index, 'CMP'] = CMPdf.loc[buy_df.index, 'CMP']
+        buy_df.loc[buy_df.index, 'CHANGE'] = CMPdf.loc[buy_df.index, 'CHANGE']
 
-        # Conditionally assign values based on criteria
-        filtered_df.loc[CMPdf['CMP'] > r1s1_df['Fibonacci_R1'], 'TradeType'] = 'Buy'
-        filtered_df.loc[CMPdf['CMP'] < r1s1_df['Fibonacci_S1'], 'TradeType'] = 'Sell'
-    write_to_worksheet(filtered_df, 'FilteredStocks')
+        # buy_df['TradeType'] = 'Hold'
+
+        # # Conditionally assign values based on criteria
+        # filtered_df.loc[CMPdf['CMP'] > r1s1_df['Fibonacci_R1'], 'TradeType'] = 'Buy'
+        # filtered_df.loc[CMPdf['CMP'] < r1s1_df['Fibonacci_S1'], 'TradeType'] = 'Sell'
+    write_to_worksheet(buy_df , 'BuyStocks')
+    if not sell_df.empty:
+        sell_df.loc[sell_df.index, 'CMP'] = CMPdf.loc[sell_df.index, 'CMP']
+        sell_df.loc[sell_df.index, 'CHANGE'] = CMPdf.loc[sell_df.index, 'CHANGE']
+
+        # sell_df['TradeType'] = 'Hold'
+
+        # # Conditionally assign values based on criteria
+        # filtered_df.loc[CMPdf['CMP'] > r1s1_df['Fibonacci_R1'], 'TradeType'] = 'Buy'
+        # filtered_df.loc[CMPdf['CMP'] < r1s1_df['Fibonacci_S1'], 'TradeType'] = 'Sell'    
+    write_to_worksheet(sell_df , 'SellStocks')
 
 
 # def process_holiday_calendra():

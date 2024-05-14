@@ -80,72 +80,68 @@ def write_to_worksheet(dataframe, worksheet_name):
 
     # historyLog = spreadsheet.get_worksheet(4) 
 
-    # Define the background colors for Buy and Sell entries
-    buy_color = {'red': 0, 'green': 1, 'blue': 0, 'alpha': 0}
-    sell_color = {'red': 1, 'green': 0, 'blue': 0, 'alpha': 0}
+    # # Define the background colors for Buy and Sell entries
+    # buy_color = {'red': 0, 'green': 1, 'blue': 0, 'alpha': 0}
+    # sell_color = {'red': 1, 'green': 0, 'blue': 0, 'alpha': 0}
 
-    # Get the range of the TradeType column
-    trade_type_range = f'B2:B{len(dataframe) + 1}'  # Assuming TradeType column starts from B2
+    # # Get the range of the TradeType column
+    # trade_type_range = f'B2:B{len(dataframe) + 1}'  # Assuming TradeType column starts from B2
     
-    # Prepare the request to add conditional formatting for Buy and Sell entries
-    requests = []
-    requests.append({
-        'addConditionalFormatRule': {
-            'rule': {
-                'ranges': [{
-                    'sheetId': worksheet.id,
-                    'startRowIndex': 1,
-                    'endRowIndex': len(dataframe) + 1,
-                    'startColumnIndex': dataframe.columns.get_loc('TradeType'),
-                    'endColumnIndex': dataframe.columns.get_loc('TradeType') + 1,
-                }],
-                'booleanRule': {
-                    'condition': {
-                        'type': 'TEXT_CONTAINS',
-                        'values': [{'userEnteredValue': 'Buy'}],
-                    },
-                    'format': {
-                        'backgroundColor': buy_color,
-                    },
-                },
-            },
-            'index': 0,
-        }
-    })
-    requests.append({
-        'addConditionalFormatRule': {
-            'rule': {
-                'ranges': [{
-                    'sheetId': worksheet.id,
-                    'startRowIndex': 1,
-                    'endRowIndex': len(dataframe) + 1,
-                    'startColumnIndex': dataframe.columns.get_loc('TradeType'),
-                    'endColumnIndex': dataframe.columns.get_loc('TradeType') + 1,
-                }],
-                'booleanRule': {
-                    'condition': {
-                        'type': 'TEXT_CONTAINS',
-                        'values': [{'userEnteredValue': 'Sell'}],
-                    },
-                    'format': {
-                        'backgroundColor': sell_color,
-                    },
-                },
-            },
-            'index': 1,
-        }
-    })
+    # # Prepare the request to add conditional formatting for Buy and Sell entries
+    # requests = []
+    # requests.append({
+    #     'addConditionalFormatRule': {
+    #         'rule': {
+    #             'ranges': [{
+    #                 'sheetId': worksheet.id,
+    #                 'startRowIndex': 1,
+    #                 'endRowIndex': len(dataframe) + 1,
+    #                 'startColumnIndex': dataframe.columns.get_loc('TradeType'),
+    #                 'endColumnIndex': dataframe.columns.get_loc('TradeType') + 1,
+    #             }],
+    #             'booleanRule': {
+    #                 'condition': {
+    #                     'type': 'TEXT_CONTAINS',
+    #                     'values': [{'userEnteredValue': 'Buy'}],
+    #                 },
+    #                 'format': {
+    #                     'backgroundColor': buy_color,
+    #                 },
+    #             },
+    #         },
+    #         'index': 0,
+    #     }
+    # })
+    # requests.append({
+    #     'addConditionalFormatRule': {
+    #         'rule': {
+    #             'ranges': [{
+    #                 'sheetId': worksheet.id,
+    #                 'startRowIndex': 1,
+    #                 'endRowIndex': len(dataframe) + 1,
+    #                 'startColumnIndex': dataframe.columns.get_loc('TradeType'),
+    #                 'endColumnIndex': dataframe.columns.get_loc('TradeType') + 1,
+    #             }],
+    #             'booleanRule': {
+    #                 'condition': {
+    #                     'type': 'TEXT_CONTAINS',
+    #                     'values': [{'userEnteredValue': 'Sell'}],
+    #                 },
+    #                 'format': {
+    #                     'backgroundColor': sell_color,
+    #                 },
+    #             },
+    #         },
+    #         'index': 1,
+    #     }
+    # })
 
-    # Execute the requests
-    batch_update_body = {'requests': requests}
-    spreadsheet.batch_update(batch_update_body)
+    # # Execute the requests
+    # batch_update_body = {'requests': requests}
+    # spreadsheet.batch_update(dataframe)
 
     # Update data
     spreadsheet.values_update("'" + worksheet.title + "'!A1", params={'valueInputOption': 'RAW'}, body={'values': values})
-
-    # # Append data to history log
-    # spreadsheet.values_append("'" + historyLog.title + "'!A1", params={'valueInputOption': 'RAW'}, body={'values': values})
-
 
 def end_of_the_sheet():
     endOfDaySheet = spreadsheet.get_worksheet(1)
@@ -168,8 +164,8 @@ def end_of_the_sheet():
     R1S1SHEET.clear()
     spreadsheet.values_update("'" + R1S1SHEET.title + "'!A1", params={'valueInputOption': 'RAW'}, body={'values': values})
 
-def get_r1_s1_values():
-    R1S1SHEET = spreadsheet.get_worksheet(3)
+def get_r1_s1_values(sheet_name):
+    R1S1SHEET =spreadsheet.worksheet(sheet_name)
     R1S1SHEETVALUES = R1S1SHEET.get_all_values()
     R1S1SHEETVALUESdf = pd.DataFrame(R1S1SHEETVALUES[1:], columns=R1S1SHEETVALUES[0])
     return R1S1SHEETVALUESdf    
