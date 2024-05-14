@@ -143,7 +143,7 @@ def write_to_worksheet(dataframe, worksheet_name):
     # Update data
     spreadsheet.values_update("'" + worksheet.title + "'!A1", params={'valueInputOption': 'RAW'}, body={'values': values})
 
-def end_of_the_sheet():
+def end_of_the_sheet(sheet_name):
     endOfDaySheet = spreadsheet.get_worksheet(1)
     endOfDayData = endOfDaySheet.get_all_values()
     endOfDayData_df = pd.DataFrame(endOfDayData[1:], columns=endOfDayData[0])
@@ -160,7 +160,7 @@ def end_of_the_sheet():
     endOfDayData_df.loc[:,'TIMESTAMP'] = current_time
     values = [endOfDayData_df.columns.tolist()] + endOfDayData_df.values.tolist()
 
-    R1S1SHEET=spreadsheet.get_worksheet(3)
+    R1S1SHEET=spreadsheet.worksheet(sheet_name)
     R1S1SHEET.clear()
     spreadsheet.values_update("'" + R1S1SHEET.title + "'!A1", params={'valueInputOption': 'RAW'}, body={'values': values})
 

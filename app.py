@@ -67,7 +67,7 @@ def update_previous_sheet():
     print(f"Current time: {current_time}, Weekday: {current_weekday}", "start_time: ", start_time, "end_time: ", end_time, current_weekday not in [5, 6])
     if (current_weekday in [5, 6] or (current_time <= start_time or current_time >= end_time)):
         try:
-            end_of_the_sheet()
+            end_of_the_sheet('R1S1SHEET')
             return jsonify({'status': 'Sheet Updated Successfully'}), 200
         except Exception as e:
             logger.error(f"Error updating sheet: {e}")
