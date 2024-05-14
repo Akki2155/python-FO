@@ -26,7 +26,6 @@ def start_process():
     r1s1_df = get_r1_s1_values('R1S1SHEET')
     while get_stocks:
         # try:
-            print("Processing data loop...", r1s1_df)
             process_data(r1s1_df)
             sleep(30)
         # except Exception as e:
