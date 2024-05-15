@@ -133,16 +133,22 @@ import pandas as pd
 
 def process_data(r1s1_df):
     CMPdf = get_data_set()
-    CMPdf['CMP'] = pd.to_numeric(CMPdf['CMP'])
-    CMPdf['CHANGE'] = pd.to_numeric(CMPdf['CHANGE'])
-    r1s1_df['Fibonacci_S1'] = pd.to_numeric(r1s1_df['Fibonacci_S1'])
-    r1s1_df['Fibonacci_R1'] = pd.to_numeric(r1s1_df['Fibonacci_R1'])
+    CMPdf['CMP'] = CMPdf['CMP'].apply(parse_numeric_or_keep)
+    CMPdf['CHANGE'] = CMPdf['CHANGE'].apply(parse_numeric_or_keep)
+    r1s1_df['Fibonacci_S1'] = r1s1_df['Fibonacci_S1'].apply(parse_numeric_or_keep)
+    r1s1_df['Fibonacci_R1'] = r1s1_df['Fibonacci_R1'].apply(parse_numeric_or_keep)
+
 
     CMPdf.reset_index(drop=True, inplace=True)
     r1s1_df.reset_index(drop=True, inplace=True)
 
-    buy_df = r1s1_df[(CMPdf['CMP'] > r1s1_df['Fibonacci_R1']) & ((CMPdf['CHANGE'] >= 1.5) & (CMPdf['CHANGE'] <= 3))]
-    sell_df = r1s1_df[(CMPdf['CMP'] < r1s1_df['Fibonacci_S1']) & ((CMPdf['CHANGE'] >= -3) & (CMPdf['CHANGE'] <= -1.5))]
+    buy_df = r1s1_df[(pd.to_numeric(CMPdf['CMP'], errors='coerce') > r1s1_df['Fibonacci_R1']) & 
+                 ((pd.to_numeric(CMPdf['CHANGE'], errors='coerce') >= 1.5) & 
+                  (pd.to_numeric(CMPdf['CHANGE'], errors='coerce') <= 3))]
+
+    sell_df = r1s1_df[(pd.to_numeric(CMPdf['CMP'], errors='coerce') < r1s1_df['Fibonacci_S1']) & 
+                    ((pd.to_numeric(CMPdf['CHANGE'], errors='coerce') >= -3) & 
+                    (pd.to_numeric(CMPdf['CHANGE'], errors='coerce') <= -1.5))]
     if not buy_df.empty:
 
         buy_df.loc[buy_df.index, 'CMP'] = CMPdf.loc[buy_df.index, 'CMP']
@@ -153,7 +159,8 @@ def process_data(r1s1_df):
         # # Conditionally assign values based on criteria
         # filtered_df.loc[CMPdf['CMP'] > r1s1_df['Fibonacci_R1'], 'TradeType'] = 'Buy'
         # filtered_df.loc[CMPdf['CMP'] < r1s1_df['Fibonacci_S1'], 'TradeType'] = 'Sell'
-    write_to_worksheet(buy_df , 'BuyStocks')
+    buy_df_serializable = buy_df.applymap(lambda x: x.item() if isinstance(x, pd.Series) else x)  
+    write_to_worksheet(buy_df_serializable , 'BuyStocks')
     if not sell_df.empty:
         sell_df.loc[sell_df.index, 'CMP'] = CMPdf.loc[sell_df.index, 'CMP']
         sell_df.loc[sell_df.index, 'CHANGE'] = CMPdf.loc[sell_df.index, 'CHANGE']
@@ -162,8 +169,9 @@ def process_data(r1s1_df):
 
         # # Conditionally assign values based on criteria
         # filtered_df.loc[CMPdf['CMP'] > r1s1_df['Fibonacci_R1'], 'TradeType'] = 'Buy'
-        # filtered_df.loc[CMPdf['CMP'] < r1s1_df['Fibonacci_S1'], 'TradeType'] = 'Sell'    
-    write_to_worksheet(sell_df , 'SellStocks')
+        # filtered_df.loc[CMPdf['CMP'] < r1s1_df['Fibonacci_S1'], 'TradeType'] = 'Sell' 
+    sell_df_serializable = sell_df.applymap(lambda x: x.item() if isinstance(x, pd.Series) else x)         
+    write_to_worksheet(sell_df_serializable , 'SellStocks')
 
 
 # def process_holiday_calendra():
@@ -171,4 +179,8 @@ def process_data(r1s1_df):
 #     df['tradingDate'] = pd.to_datetime(df['tradingDate'], format='%d-%b-%Y')
 #     return df['tradingDate'].dt.date.to_list()
     
-    
+def parse_numeric_or_keep(value):
+    try:
+        return pd.to_numeric(value)
+    except ValueError:
+        return value    
